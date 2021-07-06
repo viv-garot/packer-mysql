@@ -13,7 +13,7 @@ Create a Vagrant ubuntu lts box via Packer
 
 - Clone
 - Build
-- Vagrant
+- Vagrant usage
 - Publish
 - Consume 
 
@@ -37,7 +37,7 @@ cd packer-bionic64
 packer build bionic64.json
 ```
 
-### Use the box with Vagrant
+### How to use the box with Vagrant
 
 #### Add the box to Vagrant
 
@@ -49,19 +49,6 @@ vagrant box add --name bionic64 bionic64-vbox.box
 
 ```
 vagrant init -m bionic64
-```
-
-#### *VagrantFile exemple*
-
-```
-# VagrantFile
-
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
-
-Vagrant.configure("2") do |config|
-  config.vm.box = "bionic64"
-end
 ```
 
 #### Start the box
@@ -80,7 +67,6 @@ or
 ssh vagrant@127.0.0.1 -p 2222 
 ```
 *(password = vagrant)*
-
 *(port 2222 is hardcoded in bionic64.json)*
 
 ### Destroy the box
@@ -128,7 +114,7 @@ export ATLAS_TOKEN=<generated-token>
 vagrant cloud auth login
 ```
 
-### Create the box 
+### Create the box in Vagrant Cloud
 
 ```
 vagrant cloud box create <user>/<box> --no-private
