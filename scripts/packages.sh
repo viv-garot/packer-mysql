@@ -10,7 +10,7 @@ apt-get install -y linux-generic linux-image-generic
 # basic tools
 apt-get install -y  \
 	git vim curl wget jq tar unzip software-properties-common net-tools \
-	language-pack-en ctop htop sysstat
+	language-pack-en ctop htop sysstat nginx
 
 # Hide Ubuntu splash screen during OS Boot, so you can see if the boot hangs
 apt-get remove -y plymouth-theme-ubuntu-text
