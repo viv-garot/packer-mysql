@@ -18,4 +18,4 @@ sed -i 's/GRUB_CMDLINE_LINUX_DEFAULT="quiet"/GRUB_CMDLINE_LINUX_DEFAULT=""/' /et
 update-grub
 
 # Reboot with the new kernel
-shutdown -r now  
+shutdown -r now
