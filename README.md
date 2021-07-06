@@ -37,7 +37,7 @@ cd packer-bionic64
 packer build bionic64.json
 ```
 
-### Vagrant
+### Use the box with Vagrant
 
 #### Add the box to Vagrant
 
