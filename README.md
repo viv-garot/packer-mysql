@@ -98,7 +98,7 @@ enabled. Please create an access token using the Vagrant Cloud website and store
 the result in the 'ATLAS_TOKEN' environment variable.
 ```
 
-*- Create a token on Vagrant Cloud if not performed already*
+*- Create a token in Vagrant Cloud if not performed already*
 
 ![image](https://user-images.githubusercontent.com/85481359/124562546-6f819000-de3f-11eb-9609-8c5ed40dc159.png)
 
