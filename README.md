@@ -22,19 +22,19 @@ Create a Vagrant ubuntu lts box via Packer
 ### Clone the repo
 
 ```
-git clone https://github.com/viv-garot/packer-bionic64
+git clone https://github.com/viv-garot/packer-nginx64
 ```
 
 ### Change directory
 
 ```
-cd packer-bionic64
+cd packer-nginx64
 ```
 
 ### Build the box with Packer
 
 ```
-packer build bionic64.json
+packer build nginx64.json
 ```
 
 ### How to use the box with Vagrant
@@ -42,13 +42,13 @@ packer build bionic64.json
 #### Add the box to Vagrant
 
 ```
-vagrant box add --name bionic64 bionic64-vbox.box
+vagrant box add --name nginx64 nginx64-vbox.box
 ```
 
 #### Initialize the box to create a VagrantFile
 
 ```
-vagrant init -m bionic64
+vagrant init -m nginx64
 ```
 
 #### Start the box
@@ -121,7 +121,7 @@ vagrant cloud box create <user>/<box> --no-private
 ```
 e.g.
 ```
-vagrant cloud box create vivien/bionic64 --no-private
+vagrant cloud box create vivien/nginx64 --no-private
 ```
 
 ### Publish the box to Vagrant Cloud
@@ -135,7 +135,7 @@ vagrant cloud publish --box-version `date +%y.%m.%d` \
 e.g.
 ```
 vagrant cloud publish --box-version `date +%y.%m.%d` \
-  --force --no-private --release vivien/bionic64   \
+  --force --no-private --release vivien/nginx64   \
   `date +%y.%m.%d` virtualbox bionic64-vbox.box
 ```
 
@@ -161,7 +161,7 @@ vagrant init -m <user>/<box>
 
 e.g.
 ```
-vagrant init -m vivien/bionic64
+vagrant init -m vivien/nginx64
 ```
 
 ### Start the box
