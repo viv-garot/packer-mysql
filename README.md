@@ -1,7 +1,7 @@
 # packer-nginx64
 
 ## Description
-Create a Vagrant ubuntu lts box via Packer
+Create a Vagrant nginx ubuntu based box via Packer
 
 ## Pre-requirements
 
