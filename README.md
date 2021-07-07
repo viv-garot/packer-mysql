@@ -1,4 +1,4 @@
-# packer-bionic64
+# packer-nginx64
 
 ## Description
 Create a Vagrant ubuntu lts box via Packer
@@ -129,14 +129,14 @@ vagrant cloud box create vivien/nginx64 --no-private
 ```
 vagrant cloud publish --box-version `date +%y.%m.%d` \
   --force --no-private --release <user>/<box>   \
-  `date +%y.%m.%d` virtualbox bionic64-vbox.box
+  `date +%y.%m.%d` virtualbox nginx64-vbox.box
 ```
 
 e.g.
 ```
 vagrant cloud publish --box-version `date +%y.%m.%d` \
   --force --no-private --release vivien/nginx64   \
-  `date +%y.%m.%d` virtualbox bionic64-vbox.box
+  `date +%y.%m.%d` virtualbox nginx64-vbox.box
 ```
 
 ## Consume the box from the Vagrant Cloud
