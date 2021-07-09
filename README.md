@@ -78,7 +78,7 @@ vagrant destroy
 ### Remove the box
 
 ```
-vagrant box remove bionic64
+vagrant box remove mysql
 ```
 
 
