@@ -1,7 +1,7 @@
-# packer-nginx64
+# packer-mysql
 
 ## Description
-Create a Vagrant nginx ubuntu based box via Packer
+Create a Vagrant mysql ubuntu based box via Packer
 
 ## Pre-requirements
 
@@ -22,19 +22,19 @@ Create a Vagrant nginx ubuntu based box via Packer
 ### Clone the repo
 
 ```
-git clone https://github.com/viv-garot/packer-nginx64
+git clone https://github.com/viv-garot/packer-mysql
 ```
 
 ### Change directory
 
 ```
-cd packer-nginx64
+cd packer-mysql
 ```
 
 ### Build the box with Packer
 
 ```
-packer build nginx64.json
+packer build mysql.json
 ```
 
 ### How to use the box with Vagrant
@@ -42,13 +42,13 @@ packer build nginx64.json
 #### Add the box to Vagrant
 
 ```
-vagrant box add --name nginx64 nginx64-vbox.box
+vagrant box add --name mysql mysql-vbox.box
 ```
 
 #### Initialize the box to create a VagrantFile
 
 ```
-vagrant init -m nginx64
+vagrant init -m mysql
 ```
 
 #### Start the box
@@ -121,7 +121,7 @@ vagrant cloud box create <user>/<box> --no-private
 ```
 e.g.
 ```
-vagrant cloud box create vivien/nginx64 --no-private
+vagrant cloud box create vivien/mysql --no-private
 ```
 
 ### Publish the box to Vagrant Cloud
@@ -129,14 +129,14 @@ vagrant cloud box create vivien/nginx64 --no-private
 ```
 vagrant cloud publish --box-version `date +%y.%m.%d` \
   --force --no-private --release <user>/<box>   \
-  `date +%y.%m.%d` virtualbox nginx64-vbox.box
+  `date +%y.%m.%d` virtualbox mysql-vbox.box
 ```
 
 e.g.
 ```
 vagrant cloud publish --box-version `date +%y.%m.%d` \
-  --force --no-private --release vivien/nginx64   \
-  `date +%y.%m.%d` virtualbox nginx64-vbox.box
+  --force --no-private --release vivien/mysql   \
+  `date +%y.%m.%d` virtualbox mysql-vbox.box
 ```
 
 ## Consume the box from the Vagrant Cloud
@@ -161,7 +161,7 @@ vagrant init -m <user>/<box>
 
 e.g.
 ```
-vagrant init -m vivien/nginx64
+vagrant init -m vivien/mysql
 ```
 
 ### Start the box
