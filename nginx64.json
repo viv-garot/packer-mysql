@@ -59,12 +59,6 @@
             "{{.Name}}",
             "--nic1",
             "nat"
-          ],
-          [
-            "modifyvm",
-            "{{.Name}}",
-            "--natpf1",
-            "guest_http,tcp,,6969,,80"
           ]
         ],
         "virtualbox_version_file": ".vbox_version",
